@@ -35,6 +35,6 @@ class ArticlesController < ApplicationController
 		@article = Article.find(params[:id])
 		@article.update(article_params)
 
-		redirect_to_article_patj(@article)
+		redirect_to article_path(@article)
 	end
 end
